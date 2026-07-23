@@ -1,0 +1,25 @@
+name: cjm-capability-pysbd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    # Result data noun (SentenceSegmentationResult). Substrate (cjm-substrate)
+    # is AUTO-INJECTED by `cjm-ctl install-all` (schema v2), so it is not
+    # listed here.
+    - cjm-capability-primitives
+
+    # Utilities
+    - fastcore
+    - pydantic
+
+    # Sentence segmentation (rule-based; pure-pip, no model download)
+    - pysbd
+
+    # Worker dependencies
+    - fastapi
+    - uvicorn
+    - psutil
+    - httpx

@@ -6,7 +6,7 @@ pySBD-based sentence-segmentation tool capability for the cjm-substrate runtime 
 
 ## Modules
 
-- **`cjm_capability_pysbd`**
+- **`cjm_capability_pysbd.__init__`**
 - **`cjm_capability_pysbd.capability`** — Pure-compute sentence-segmentation tool capability using pySBD (Option C; B.5 work item 81e43606).
 
 ## API

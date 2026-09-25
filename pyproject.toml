@@ -13,6 +13,9 @@ authors = [{name = "Christian J. Mills", email = "9126128+cj-mills@users.noreply
 classifiers = ["Natural Language :: English", "Intended Audience :: Developers", "Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only"]
 dependencies = ['cjm-substrate>=0.0.58', 'cjm-capability-primitives>=0.0.11', 'pysbd']
 
+[project.optional-dependencies]
+test = ['cjm-sentence-segmentation-adapter-interface>=0.0.1', 'pytest']
+
 [project.urls]
 Repository = "https://github.com/cj-mills/cjm-capability-pysbd"
 

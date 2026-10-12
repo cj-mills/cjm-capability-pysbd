@@ -1,10 +1,9 @@
 """Tests for the pySBD segmentation capability — config plumbing + span contract on the abbreviation/title class that motivated the capability (B.5)."""
-import pytest
 
+import pytest
 from cjm_capability_primitives.sentence_segmentation import SentenceSegmentationResult
 from cjm_capability_pysbd.capability import PySBDConfig, PySBDSegmentationCapability
-from cjm_sentence_segmentation_adapter_interface.adapter import (
-    SentenceSegmentationToolProtocol)
+from cjm_sentence_segmentation_adapter_interface.adapter import SentenceSegmentationToolProtocol
 from cjm_substrate.core.errors import CapabilityInputError
 
 
